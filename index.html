@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html alng="en">
+
+<head>
+    
+<script src="app.js"></script>
+<script>
+function validate(){
+ 
+    if(document.getElementById("pass").length <= 8){
+        var pw =document.getElementById("pass");
+        var cpw = document.getElementById("cpass");
+        if(pw === cpw){
+            window.write("Saved true");
+        }
+        else{
+        window.alert("password and ConfPass should Same");
+        }
+    }
+    else{
+    window.alert("password should be Minimum 8 Characters")
+    }
+    
+}
+</script>
+</head>
+<body style="background-color: lightblue">
+    <h1 style="color: rgb(218, 241, 9);margin-left: 500px;">IQ Software Solutions</h1>
+    <form>
+        username : <input type="text" id="name" placeholder="UserName"><br><br>
+        Password : <input type="text" id="pass" placeholder="Password"><br><br>
+        ConfPass : <input type="text"  id="cpass" placeholder="ConfPass"><br><br>
+        <button id="button" onclick="validate()">Save</button>
+    </form>
+</body>
+</html>
+
+
+ 
+
